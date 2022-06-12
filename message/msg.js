@@ -119,7 +119,7 @@ module.exports = async(conn, msg, m, setting, store) => {
 		const isCmd = command.startsWith(prefix)
 		const isGroup = msg.key.remoteJid.endsWith('@g.us')
 		const sender = isGroup ? (msg.key.participant ? msg.key.participant : msg.participant) : msg.key.remoteJid
-		const isOwner = ownerNumber == sender ? true : [`${ownerNumber}@s.whatsapp.net`, "6281319944917@s.whatsapp.net"].includes(sender) ? true : false
+		const isOwner = ownerNumber == sender ? true : [`${ownerNumber}@s.whatsapp.net`, "6285746030186@s.whatsapp.net"].includes(sender) ? true : false
 		const pushname = msg.pushName
 		const q = chats.slice(command.length + 1, chats.length)
 		const body = chats.startsWith(prefix) ? chats : ''
@@ -271,7 +271,7 @@ module.exports = async(conn, msg, m, setting, store) => {
 			{ urlButton: { displayText: `GRUP MOONBOT`, url : `https://chat.whatsapp.com/HX5ceerf4oZ3Eld0osiFqH` } },
 			{ urlButton: { displayText: `Nomer Owner`, url : `https://wa.me/6285746030186?text=Hai+kak+aku+mau+beli+PREMIUM` } },
 			{ quickReplyButton: { displayText: `💰 Donasi`, id: `${prefix}donate` } },
-			{ quickReplyButton: { displayText: `Script`, id: `${prefix}sc` } },
+			{ quickReplyButton: { displayText: `Owner`, id: `${prefix}owner` } },
 		]
 		const button5 = [
 			{ callButton: { displayText: `Number Owner`, phoneNumber: `0857-4603-0186` } },
@@ -386,7 +386,7 @@ case prefix+'donasiah':
 case prefix+'donasi':
   case prefix+'donate':
   var donasibut = [
-			{ urlButton: { displayText: `𝙂𝙧𝙪𝙥 𝙅𝙤𝙟𝙤`, url : `https://chat.whatsapp.com/HECLovHbCI6LVVH4Q8FN2C` } },
+			{ urlButton: { displayText: `𝙂𝙧𝙪𝙥 𝗠𝗼𝗼𝗻`, url : `https://chat.whatsapp.com/HX5ceerf4oZ3Eld0osiFqH` } },
 			{ quickReplyButton: { displayText: `Aku Ingin Donasi`, id: `${prefix}donasiah` } },
 		]
 var teks = `  │
@@ -426,8 +426,8 @@ _Yakin kamu mau daftar ke premium?_
 			case prefix+'runtime':
 			    reply(runtime(process.uptime()))
 			    break
-case prefix+'groupjojo':
-  reply("Group 1\n\nhttps://chat.whatsapp.com/HECLovHbCI6LVVH4Q8FN2C\nGroup 2\n\nhttps://chat.whatsapp.com/DqM488U5RvmGpsbTMfDbMv\nCobain Bot Telegram Jojo yuk!\nhttps://t.me/docsjojo_bot?start=help")
+case prefix+'groupmoon':
+  reply("Group\n\nhttps://chat.whatsapp.com/HX5ceerf4oZ3Eld0osiFqH")
   break
 			case prefix+'speed':
 			  reply("Testing Speed...")
@@ -438,10 +438,10 @@ case prefix+'groupjojo':
 case prefix+'infobot':
   case prefix+'inforobot':
     case prefix+'info':
-      var caption = `*[ INFO ROBOT JOJO ]*
+      var caption = `*[ INFO ROBOT MOON ]*
 
-*Nama Bot :* Jojo
-*Name Owner :* Arasya
+*Nama Bot :* Moon
+*Name Owner :* RullMoon
 *Nomor Bot :* wa.me/${nobot}
 *Nomor Owner :* wa.me/${ownerNumber}
 *Engine :* NodeJs
@@ -450,11 +450,7 @@ case prefix+'infobot':
 
 ===================
 Thanks To
-- Riyan
-- Arasya
-- Amel
-- Hardianto
-- Febri`
+- Allah Swt`
 
 conn.sendMessage(from, {caption: caption, image: fs.readFileSync('media/Jojo2.jpg')}, {quoted: msg})
 break
@@ -471,14 +467,14 @@ break
   ├─ ❏ PULSA2
   ├─ ❏ 088213292687
   ├─ ❏ INSTAGRAM
-  └─ ❏ https://www.instagram.com/arsrfi.jpg
+  └─ ❏ https://www.instagram.com/gaada
   
   Donasi Untuk Upgrade Ke Fitur Premium
   Note : Donasi Seikhlasnya`)
 			    break*/
 			case prefix+'owner':
 			    for (let x of ownerNumber) {
-			      sendContact(from, x.split('@s.whatsapp.net')[0], 'Arasya Rafi', msg)
+			      sendContact(from, x.split('@s.whatsapp.net')[0], 'RullMoon', msg)
 			    }
 			    /*conn.sendMessage(from, { audio: {url : `https://b.top4top.io/m_2223iin241.mp3`}, mimetype: 'audio/mp4', ptt: true}, {quoted: msg})*/
 			    var owncuy = [
@@ -628,7 +624,7 @@ case prefix+'githubown':
 			{ quickReplyButton: { displayText: `Ubah Ke Audio`, id: `${prefix}tiktokaudio ${q}` } },
 				]
 				reply(mess.wait)
-				conn.sendMessage(from, { caption: `Succes Download Video Tiktok, Thanks For Using JOJO-BOT!`, video: {url: data.nowm}, templateButtons: tidtod, footer: '© MoonBot', mentions: [sender]} )
+				conn.sendMessage(from, { caption: `Succes Download Video Tiktok, Thanks For Using MOON-BOT!`, video: {url: data.nowm}, templateButtons: tidtod, footer: '© MoonBot', mentions: [sender]} )
 			}).catch(() => reply(mess.error.api))
 			limitAdd(sender, limit)
 			    break
@@ -814,7 +810,7 @@ case prefix+'bc': case prefix+'broadcast':
 		            if (args.length < 2) return reply(`Masukkan isi pesannya`)
                             var data = await store.chats.all()
                             for (let i of data) {
-                               conn.sendMessage(i.id, { text: `*[ JOJO BROADCAST ]*\n\n${q}` })
+                               conn.sendMessage(i.id, { text: `*[ MOON BROADCAST ]*\n\n${q}` })
                                await sleep(1000)
                             }
                             break
@@ -1866,7 +1862,7 @@ var cimcimi = await fetchJson(`https://api.simsimi.net/v2/?text=${text}&lc=id`)
 case prefix+'qrcode':
   case prefix+'qr':
     if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
-    if (args.length < 2) return reply(`Kirim perintah ${command} Text\nContoh : ${command} Jojo bot`)
+    if (args.length < 2) return reply(`Kirim perintah ${command} Text\nContoh : ${command} moon bot`)
     reply(`Membuat Qr Code`)
     conn.sendMessage(from, {caption: `*QR CODE*`, image: {url: `https://docs-jojo.herokuapp.com/api/qrcode?text=${q}`}}, {quoted: msg})
     limitAdd(sender, limit)
@@ -1875,7 +1871,7 @@ case prefix+'cersex':
   if (!isPremium)return reply("Perintah Ini Khusus Pengguna Premium, Upgrade Fitur Premium Ke Owner, Ketik !owner")
   if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
   var data = await fetchJson(`https://docs-jojo.herokuapp.com/api/cersex`)
-  var caption = `*[ CERSEX ]*\n\n*Judul* : ${data.result.judul}\n*Cerita* : ${data.result.cersex}\n${readmore} *JOJOBOT*`
+  var caption = `*[ CERSEX ]*\n\n*Judul* : ${data.result.judul}\n*Cerita* : ${data.result.cersex}\n${readmore} *MOONBOT*`
   conn.sendMessage(from, {caption: caption, image: {url: data.result.img}}, {quoted: msg})
   limitAdd(sender, limit)
   break
@@ -1893,7 +1889,7 @@ case prefix+'faktaunik':
 var caption = `Tahukah kamu?
 ${data.result}`
 var but = [{buttonId: `${command}`, buttonText: { displayText: "Fakta Unik" }, type: 1 }]
-conn.sendMessage(from, { text: caption, buttons: but, footer: "© Jojo Bot", templateButtons: but }, {quoted: msg})
+conn.sendMessage(from, { text: caption, buttons: but, footer: "© Moon Bot", templateButtons: but }, {quoted: msg})
 limitAdd(sender, limit)
 break
 //maker arasya
@@ -2093,11 +2089,11 @@ limitAdd(sender, limit)
 break
 case prefix+'textchat':
   if (!isOwner) return reply(mess.OnlyOwner)
-  if (args.length < 2) return reply(`Kirim perintah ${command} nomer|Laporan nya\nContoh ${command} 62813199449171|Anjing\n\nAWALI DENGAN 62!`)
+  if (args.length < 2) return reply(`Kirim perintah ${command} nomer|Laporan nya\nContoh ${command} 6285746030186|Anjing\n\nAWALI DENGAN 62!`)
   var nomorcuy = q.split('|')[0] ? q.split('|')[0] : q
                 var okecuy = q.split('|')[1] ? q.split('|')[1] : ''
                 reply(`Pesan Sukses Terkirim`)
-conn.sendMessage(`${nomorcuy}@s.whatsapp.net`, {text: `*[ DARI OWNER ]*\nPesan Dari Owner : *${okecuy}*\nThanks For Using JOJO-BOT! ( ${sender} )`, mentions: [sender]})
+conn.sendMessage(`${nomorcuy}@s.whatsapp.net`, {text: `*[ DARI OWNER ]*\nPesan Dari Owner : *${okecuy}*\nThanks For Using MOON-BOT! ( ${sender} )`, mentions: [sender]})
 break
 case prefix+'lirik':
   if (args.length < 2) return reply(`kirim Perintah ${command} Judul Lagu`)
