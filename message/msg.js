@@ -1163,7 +1163,7 @@ ${kalahnya2}
 Note : Jika Kamu Mendapatkan Item Yang Sama, Kamu Menang!!!
 Contoh : 🔔 : 🔔 : 🔔`
         var but = [{buttonId: `${command}`, buttonText: { displayText: "Kembali Slot" }, type: 1 }]
-conn.sendMessage(from, { text: slotnya, buttons: but, footer: "© Slot By Arasya\n@arsrfi.jpg", templateButtons: but }, {quoted: msg})
+conn.sendMessage(from, { text: slotnya, buttons: but, footer: "© Slot By Moon\nMoonBot", templateButtons: but }, {quoted: msg})
 gameAdd(sender, glimit)
         break
 case prefix+'cekme':
@@ -1237,7 +1237,7 @@ limitAdd(sender, limit)
 case prefix+'gantengcek':
   case prefix+'cekganteng':
     if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
-				if (!q) return reply(`Penggunaan ${command} Nama\n\nContoh : ${command} Arasya`)
+				if (!q) return reply(`Penggunaan ${command} Nama\n\nContoh : ${command} Moon`)
 					const gan = ['5', '10', '15' ,'20', '25','30','35','40','45','50','55','60','65','70','75','80','85','90','100']
 					const teng = gan[Math.floor(Math.random() * gan.length)]
 conn.sendMessage(from, { text: `Nama : ${q}\nJawaban : *${teng}%*` }, { quoted: msg })
@@ -1246,7 +1246,7 @@ limitAdd(sender, limit)
 case prefix+'cantikcek':
   case prefix+'cekcantik':
     if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
-				if (!q) return reply(`Penggunaan ${command} Nama\n\nContoh : ${command} Arasya`)
+				if (!q) return reply(`Penggunaan ${command} Nama\n\nContoh : ${command} Moon`)
 					const can = ['5', '10', '15' ,'20', '25','30','35','40','45','50','55','60','65','70','75','80','85','90','100']
 					const tik = can[Math.floor(Math.random() * can.length)]
 conn.sendMessage(from, { text: `Nama : ${q}\nJawaban : *${tik}%*` }, { quoted: msg })
