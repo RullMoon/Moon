@@ -1425,7 +1425,6 @@ case prefix+'dare':
 				conn.sendMessage(from, { text: q ? q : '', mentions: mem })
 			    break
 case prefix+'kick':
-  if (!isOwner)return reply("_Maaf Fitur Ini Di Nonaktifkan Oleh Owner, Karena menyebabkan nomer bot 3 kali ke banned_")
     if (!isGroup) return reply(mess.OnlyGrup)
     if (!isGroupAdmins) return reply(mess.GrupAdmin)
     if (!isBotGroupAdmins) return reply(mess.BotAdmin)
