@@ -24,19 +24,20 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
 	
   _*${ucapanWaktu} ${pushname !== undefined ? pushname : 'Kak'}*_
 
-    Library : *Baileys-MD*.
-    Prefix : ( ${prefix} )
-    Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
-    Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
+    𝙇𝙞𝙗𝙖𝙧𝙮 : *𝙈𝙪𝙡𝙩𝙞 𝘿𝙚𝙫𝙞𝙘𝙚*.
+    𝙋𝙧𝙚𝙛𝙞𝙭 : ( ${prefix} )
+    𝙏𝙖𝙣𝙜𝙜𝙖𝙡 𝙎𝙚𝙧𝙫𝙚𝙧 : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
+    𝙒𝙖𝙠𝙩𝙪 𝙎𝙚𝙧𝙫𝙚𝙧 : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
 
-	Status : ${isOwner ? 'Owner' : isPremium ? 'Premium' : 'Free'}
-	Limit Harian : ${isOwner ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
-	Limit Game : ${isOwner ? '-' : cekGLimit(sender, gcount, glimit)}
-  Note : Anggap _<>_ *Tidak Ada*
+	𝗦𝘁𝗮𝘁𝘂𝘀 : ${isOwner ? 'Owner' : isPremium ? 'Premium' : 'Free'}
+	𝗟𝗶𝗺𝗶𝘁 𝗛𝗮𝗿𝗶𝗮𝗻 : ${isOwner ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
+	𝗟𝗶𝗺𝗶𝘁 : ${isOwner ? '-' : cekGLimit(sender, gcount, glimit)}
+  𝗖𝗮𝘁𝗮𝘁𝗮𝗻 : 𝖠𝗇𝗀𝗀𝖺𝗉 _<>_ *𝖳𝗂𝖽𝖺𝗄 𝖠𝖽𝖺*
+  𝘾𝙖𝙩𝙖𝙩𝙖𝙣: 𝖦𝖺𝗄 𝖠𝖽𝖺 𝖥𝗂𝗍𝗎𝗋 𝖠𝗇𝗍𝗂𝗅𝗂𝗇𝗄
   
-  _Ada Bug? Ketik ${prefix}report Bug mu_
+  _𝖭𝖾𝗆𝗎 𝖡𝗎𝗀? 𝖪𝖾𝗍𝗂𝗄 ${prefix}report (𝖡𝗎𝗀)_
   ${readmore}
-  *( 📍 )  Main Menu*
+  𝗠𝗲𝗻𝘂
   ≻ ${prefix}menu
   ≻ ${prefix}owner
   ≻ ${prefix}donasi
@@ -48,12 +49,12 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}simi <Text>
   ≻ ${prefix}infobot
 
-  *( ✏️ )  Converter/Tools*
+  𝗖𝗼𝗻𝘃𝗲𝗿𝘁𝗲𝗿 𝗠𝗲𝗻𝘂
   ≻ ${prefix}stiker <ReplyGambar/Caption>
   ≻ ${prefix}toimg <ReplyStiker>
   ≻ ${prefix}tovid <ReplyStiker>
 
-  *( ⌛ )  Downloader*
+  𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿
   ≻ ${prefix}play <Querry>
   ≻ ${prefix}youtube <LinkYt>
   ≻ ${prefix}tiktok <LinkTt>
@@ -68,7 +69,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}facebook <LinkFb>
   ≻ ${prefix}mediafire <LinkMediaFire>
   
-  *( ♻️ )  Random Menu*
+  𝗥𝗮𝗻𝗱𝗼𝗺 𝗠𝗲𝗻𝘂
   ≻ ${prefix}quotes
   ≻ ${prefix}gombalan
   ≻ ${prefix}katagalau
@@ -80,7 +81,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}husbu
   ≻ ${prefix}yaoi
   
-  *( ⚠️ )  Premium User*
+  𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗠𝗲𝗻𝘂
   ≻ ${prefix}asupan
   ≻ ${prefix}xnxx link
   ≻ ${prefix}ahegao
@@ -89,7 +90,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}masturbation
   ≻ ${prefix}pussy
   
-  *( 🎨 )  Menu Maker*
+  𝗠𝗲𝗻𝘂 𝗠𝗮𝗸𝗲𝗿
   ≻ ${prefix}glitch <Text> <Text>
   ≻ ${prefix}flaming <Text>
   ≻ ${prefix}shadow <Text>
@@ -115,7 +116,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}logowolf <Text>
   ≻ ${prefix}logowolf2 <Text>
   
-  *( 🪀 )  Menu Lain Nya*
+  𝗠𝗲𝗻𝘂 𝗟𝗮𝗶𝗻𝗻𝘆𝗮
   ≻ ${prefix}shortlink <Link>
   ≻ ${prefix}kbbi <Kata>
   ≻ ${prefix}faktaunik
@@ -137,14 +138,14 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}pinterest <Querry>
   ≻ ${prefix}getpp
 
-  *( 🅰️ )  Edit Vokal*
+  𝗘𝗱𝗶𝘁 𝗙𝗼𝗸𝗮𝗹
   ≻ ${prefix}halah
   ≻ ${prefix}hilih
   ≻ ${prefix}heleh
   ≻ ${prefix}huluh
   ≻ ${prefix}holoh
   
-  *( 🎮 )  Game & Fun Menu*
+  𝗚𝗮𝗺𝗲 𝗗𝗮𝗻 𝗙𝘂𝗻
   ≻ ${prefix}tictactoe @tag
   ≻ ${prefix}delttc
   ≻ ${prefix}suit
@@ -165,7 +166,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}truth
   ≻ ${prefix}dare
   
-  *( 🏦 )  Payment & Bank*
+  𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗗𝗮𝗻 𝗕𝗮𝗻𝗸
   ≻ ${prefix}buylimit <Jumlah>
   ≻ ${prefix}buyglimit <Jumlah>
   ≻ ${prefix}transfer @tag <jumlah>
@@ -173,7 +174,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}balance
   ≻ ${prefix}topbalance
 
-  *( 👥 )  Group Menu*
+  𝗚𝗿𝗼𝘂𝗽 𝗠𝗲𝗻𝘂
   ≻ ${prefix}linkgrup
   ≻ ${prefix}setppgrup
   ≻ ${prefix}setnamegc
@@ -184,7 +185,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}kick <@tag>
   ≻ ${prefix}add <@tag>
   
-  *( 🧑🏻‍💻 )  Owner Menu*
+  𝗢𝘄𝗻𝗲𝗿 𝗠𝗲𝗻𝘂
   > evalcode
   x evalcode-2
   $ executor
@@ -196,6 +197,6 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}delprem
   ≻ ${prefix}broadcast
 
-  *THANKS TO*
-  - Allah SWT`
+  𝘛𝘩𝘢𝘯𝘬𝘴 𝘛𝘰
+  - 𝖠𝗅𝗅𝖺𝗁 𝖲𝗐𝗍`
 }
